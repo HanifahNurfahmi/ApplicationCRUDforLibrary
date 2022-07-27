@@ -293,7 +293,7 @@ def pinjambuku():
         kembali = date.today() + timedelta(days=7)
         num = no()
         nama    = str(input('Masukkan Nama Anggota :').upper())
-        bukupinjam = buku()
+        Id, judul, jumlah = buku()
 
         print(f'''
                         Bukti Peminjaman Koleksi Perpusnas
@@ -304,7 +304,7 @@ def pinjambuku():
                 Tgl Hrs Kembali : {kembali}
                 ------------------------------------------------
                 Item ID     Judul                       Jml
-                {bukupinjam}
+                {Id}\t {judul}\t\t {jumlah}
                 ------------------------------------------------
                 
                 Kembalikan koleksi tepat waktu untuk menghindari
